@@ -4,7 +4,7 @@ export const Hero = () => {
             id="home"
             className="min-h-screen flex items-center relative overflow-hidden"
         >
-            <div className="max-w-6xl mx-auto px-6">
+            <div className="w-full max-w-6xl mx-auto px-6">
                 <div className="opacity-0 animate-fade-in space-y-16">
                     {/* Main heading */}
                     <div className="space-y-8">
