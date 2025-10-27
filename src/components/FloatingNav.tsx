@@ -17,7 +17,7 @@ export const FloatingNav = () => {
             <div className="bg-black/80 backdrop-sm border border-primary/30 rounded-full px-8 py-3.5 flex gap-10 ">
                 <Link
                     to="/"
-                    className={`text-xl transition-colors ${
+                    className={`text-lg transition-colors ${
                         location.pathname === "/"
                             ? "text-primary"
                             : "hover:text-primary"
@@ -27,7 +27,7 @@ export const FloatingNav = () => {
                 </Link>
                 <Link
                     to="/work"
-                    className={`text-xl transition-colors ${
+                    className={`text-lg transition-colors ${
                         location.pathname === "/work"
                             ? "text-primary"
                             : "hover:text-primary"
@@ -37,7 +37,7 @@ export const FloatingNav = () => {
                 </Link>
                 <Link
                     to="/blogs"
-                    className={`text-xl transition-colors ${
+                    className={`text-lg transition-colors ${
                         location.pathname === "/blogs"
                             ? "text-primary"
                             : "hover:text-primary"
@@ -47,7 +47,7 @@ export const FloatingNav = () => {
                 </Link>
                 <Link
                     to="/mind"
-                    className={`text-xl transition-colors ${
+                    className={`text-lg transition-colors ${
                         location.pathname === "/mind"
                             ? "text-primary"
                             : "hover:text-primary"

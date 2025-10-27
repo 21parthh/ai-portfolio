@@ -20,7 +20,7 @@ const galleryItems = [
 const MindPage = () => {
     return (
         <div className="relative">
-            <div className="max-w-6xl mx-auto px-6 py-32 pt-40">
+            <div className="max-w-4xl mx-auto px-6 py-32 pt-48">
                 <div className="mb-20 opacity-0 animate-fade-in">
                     <h1 className="text-5xl md:text-6xl font-bold mb-4 text-primary">
                         Here's what's on my mind

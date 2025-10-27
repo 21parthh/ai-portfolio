@@ -10,7 +10,7 @@ const socials = [
 export const ConnectSection = () => {
     return (
         <section className="py-20 mb-10">
-            <div className="max-w-6xl mx-auto px-6">
+            <div className="max-w-4xl mx-auto px-6">
                 <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
                     Let's Connect
                 </h2>
