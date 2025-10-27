@@ -119,7 +119,7 @@ export const Work = () => {
 
     return (
         <section id="work" className="min-h-screen py-32 px-6">
-            <div className="mx-auto">
+            <div className="max-w-6xl mx-auto">
                 {/* Heading */}
                 <div className="mb-10 opacity-0 animate-fade-in">
                     <h2 className="text-5xl md:text-6xl font-bold mb-4 text-primary">

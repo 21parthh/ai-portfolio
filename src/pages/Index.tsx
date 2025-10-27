@@ -9,19 +9,19 @@ import { AchievementsSection } from "@/components/home/AchievementsSection";
 import { ConnectSection } from "@/components/home/ConnectSection";
 
 const Index = () => {
-  return (
-    <div className="relative">
-      <Hero />
-      <InNutshell />
-      <FeaturedProjects />
-      <NowSection />
-      <SkillsSection />
-      <ExperienceSection />
-      <AchievementsSection />
-      <ConnectSection />
-      <FloatingNav />
-    </div>
-  );
+    return (
+        <div>
+            <Hero />
+            <InNutshell />
+            <FeaturedProjects />
+            <NowSection />
+            <SkillsSection />
+            <ExperienceSection />
+            <AchievementsSection />
+            <ConnectSection />
+            <FloatingNav />
+        </div>
+    );
 };
 
 export default Index;
