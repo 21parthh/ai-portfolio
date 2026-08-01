@@ -1,50 +1,71 @@
 import { Link, useLocation } from "react-router-dom";
+import { usePuneTime } from "@/components/PuneClock";
 
+const tabs = [
+    { to: "/", label: "Home" },
+    { to: "/projects", label: "Projects" },
+    { to: "/mind", label: "Mind" },
+];
+
+/* Big soft-serif name, live Pune stamp, inline tab nav. */
 export const Header = () => {
-  const location = useLocation();
+    const { pathname } = useLocation();
+    const time = usePuneTime();
 
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 py-6">
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="text-xl font-bold hover:text-primary transition-colors">
-          Parth Deore
-        </Link>
+    return (
+        <header>
+            <h1
+                aria-label="parth.deore"
+                className="name-display flex items-center gap-3 font-display text-name text-ink"
+            >
+                {/* Letters rise in one by one. */}
+                <span aria-hidden="true">
+                    {"parth.deore".split("").map((letter, index) => (
+                        <span
+                            key={index}
+                            className="name-letter"
+                            style={{ animationDelay: `${index * 40}ms` }}
+                        >
+                            {letter}
+                        </span>
+                    ))}
+                </span>
+                {/* Availability LED. */}
+                <span
+                    className="led mt-1 block h-2 w-2 rounded-full"
+                    style={{ background: "var(--dot-green)" }}
+                />
+                <span className="sr-only">Available for opportunities</span>
+            </h1>
 
-        <nav className="hidden md:flex items-center gap-8">
-          <Link 
-            to="/" 
-            className={`text-sm transition-colors ${
-              location.pathname === "/" ? "text-primary" : "text-muted-foreground hover:text-foreground"
-            }`}
-          >
-            Home
-          </Link>
-          <Link 
-            to="/work" 
-            className={`text-sm transition-colors ${
-              location.pathname === "/work" ? "text-primary" : "text-muted-foreground hover:text-foreground"
-            }`}
-          >
-            Work
-          </Link>
-          <Link 
-            to="/blogs" 
-            className={`text-sm transition-colors ${
-              location.pathname === "/blogs" ? "text-primary" : "text-muted-foreground hover:text-foreground"
-            }`}
-          >
-            Blog
-          </Link>
-          <Link 
-            to="/mind" 
-            className={`text-sm transition-colors ${
-              location.pathname === "/mind" ? "text-primary" : "text-muted-foreground hover:text-foreground"
-            }`}
-          >
-            Mind
-          </Link>
-        </nav>
-      </div>
-    </header>
-  );
+            {/* The Pune heartbeat — header echo of the footer clock. */}
+            <p className="cascade cascade-1 mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-2">
+                Pune, India &mdash;{" "}
+                <span className="tabular-nums">{time}</span> IST
+            </p>
+
+            <nav
+                aria-label="Primary"
+                className="cascade cascade-2 mt-4 flex items-center gap-5"
+            >
+                {tabs.map((tab) => {
+                    const active = pathname === tab.to;
+                    return (
+                        <Link
+                            key={tab.to}
+                            to={tab.to}
+                            aria-current={active ? "page" : undefined}
+                            className={`-my-2 py-2 ${
+                                active
+                                    ? "tab text-body font-semibold text-ink"
+                                    : "tab text-body text-ink-2 hover:text-ink"
+                            }`}
+                        >
+                            {tab.label}
+                        </Link>
+                    );
+                })}
+            </nav>
+        </header>
+    );
 };
