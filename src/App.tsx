@@ -1,3 +1,4 @@
+// Portfolio of Parth Deore — warm editorial design, built with React + Tailwind.
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
 import ProjectsPage from "./pages/ProjectsPage";
