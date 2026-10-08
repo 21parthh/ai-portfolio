@@ -1,28 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Parth Deore — AI Engineer</title>
-        <meta
-            name="description"
-            content="Parth Deore is an AI engineer in Pune, India, building ML products end to end — data, model, and the interface people touch."
-        />
-        <meta name="author" content="Parth Deore" />
-        <meta name="theme-color" content="#faf7ef" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parth Deore</title>
+<meta name="description" content="Parth Deore — founding engineer at Career Passport, building practical AI for the real world.">
+<meta property="og:title" content="Parth Deore">
+<meta property="og:description" content="Building practical AI for the real world.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23161616'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23ff7a45'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <meta property="og:type" content="profile" />
-        <meta property="og:title" content="Parth Deore — AI Engineer" />
-        <meta
-            property="og:description"
-            content="ML products end to end. 500+ users · 98.1% accuracy."
-        />
-        <meta name="twitter:card" content="summary" />
-    </head>
+<div class="wrap">
+  <main id="top">
+    <div class="hero" id="hero">
+      <div class="who rise">
+        <div class="avatar"><img src="avatar.jpg" alt="Parth Deore" width="52" height="52"></div>
+        <div><b>Parth Deore</b><small>Pune, India · <span id="heroClock"></span></small></div>
+        <nav class="icons" id="heroIcons" aria-label="Profiles"></nav>
+      </div>
+      <h1 aria-label="Building practical AI for the real world">
+        <span class="line"><span class="w" style="--i:0">Building</span> <span class="w" style="--i:1">practical</span> <span class="w" style="--i:2">AI</span></span>
+        <span class="line soft"><span class="w" style="--i:3">for</span> <span class="w" style="--i:4">the</span> <span class="w" style="--i:5">real</span> <span class="w" style="--i:6">world</span></span>
+      </h1>
+      <!-- TODO: one or two sentences, in your voice -->
+      <p class="lede rise" style="animation-delay:.55s">
+        Founding engineer at <a href="https://careerpassport.ai" target="_blank" rel="noopener">Career Passport</a>, helping people turn
+        their experience into their next opportunity. I like shipping fast, measuring honestly, and sweating the small details.
+      </p>
+      <div class="cta rise" style="animation-delay:.65s">
+        <a class="btn primary" href="#contact">Get in touch
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn" href="projects.html">See projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </div>
 
-    <body>
-        <div id="root"></div>
-        <script type="module" src="/src/main.tsx"></script>
-    </body>
+
+    <section id="now" class="reveal">
+      <!-- TODO: keep this fresh — update the date when you edit -->
+      <div class="label"><span><i>01</i>now</span><span>updated <b>oct 2026</b></span></div>
+      <div class="now">
+        <div class="card">
+          <div class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14.7 6.3 3 3L8 19H5v-3z"/><path d="m16 5 3 3"/></svg>building</div>
+          <p>At Career Passport<span>The next thing worth shipping.</span></p>
+        </div>
+        <a class="card" href="#mind">
+          <div class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>shooting</div>
+          <p>Everyday life ↓<span>Sunsets, valleys, string lights.</span></p>
+        </a>
+        <div class="card">
+          <div class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>learning</div>
+          <p>Evals that matter<span>Measuring what users feel.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about reveal">
+      <div class="label"><span><i>02</i>about</span></div>
+      <p>Most of my work is <strong>machine learning</strong>, but I end up caring a lot about how things look and feel. <strong>The interface matters as much as the model.</strong></p>
+      <p>Before Career Passport I ran a small development agency. I <a href="https://medium.com/@parth.deore" target="_blank" rel="noopener">write</a> sometimes — mostly about ML and shipping things — and take photos and save quotes I like.</p>
+      <div class="rows">
+        <!-- TODO: confirm Career Passport start year -->
+        <div class="row cur"><div class="when">2025 — now</div><div class="what">Founding Engineer<span>Career Passport</span></div></div>
+        <div class="row"><div class="when">2024 — 2025</div><div class="what">Founder<span><a href="https://templeadsinfotech.com/" target="_blank" rel="noopener">templeads infotech ↗</a></span></div></div>
+        <div class="row"><div class="when">2023</div><div class="what">Engineering Intern<span>betatest solutions</span></div></div>
+      </div>
+    </section>
+
+    <section id="mind" class="reveal">
+      <div class="label"><span><i>03</i>off the clock</span><span>photos</span></div>
+      <div class="bento">
+        <figure class="shot" data-area="a" style="grid-area:a"><img src="https://res.cloudinary.com/dh5trkmtb/image/upload/f_auto,q_auto,w_800/v1738853630/vyc9foumaognto8wkuv8.jpg" alt="Autumn canopy" loading="lazy" decoding="async"><figcaption>autumn canopy</figcaption></figure>
+        <figure class="shot" data-area="b" style="grid-area:b"><img src="https://res.cloudinary.com/dh5trkmtb/image/upload/f_auto,q_auto,w_800/v1738853630/WhatsApp_Image_2025-02-06_at_20.32.15_c0a6ccbc_n6o031.jpg" alt="Sunset over the lake" loading="lazy" decoding="async"><figcaption>sunset over the lake</figcaption></figure>
+        <figure class="shot" data-area="c" style="grid-area:c"><img src="https://res.cloudinary.com/dh5trkmtb/image/upload/f_auto,q_auto,w_800/v1738853630/dyvw7qtftdfjz8t4y6an.jpg" alt="Peak against the sky" loading="lazy" decoding="async"><figcaption>peak against the sky</figcaption></figure>
+        <figure class="shot" data-area="e" style="grid-area:e"><img src="https://res.cloudinary.com/dh5trkmtb/image/upload/f_auto,q_auto,w_800/v1738853630/ogbbdqabuel1hyqm08p2.jpg" alt="String lights at night" loading="lazy" decoding="async"><figcaption>string lights at night</figcaption></figure>
+        <figure class="shot" data-area="g" style="grid-area:g"><img src="https://res.cloudinary.com/dh5trkmtb/image/upload/f_auto,q_auto,w_800/v1738853630/o6zya7cllixvmqjmibdy.jpg" alt="Countryside view" loading="lazy" decoding="async"><figcaption>countryside view</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contact" class="contact reveal">
+      <div class="label"><span><i>04</i>contact</span><span id="clock"></span></div>
+      <h2>Building something? <span class="soft">I'd love to hear about it.</span></h2>
+      <div>
+        <button class="mail" id="mail">
+          <span id="mailText"></span>
+          <span class="hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>copy</span></span>
+        </button>
+      </div>
+      <div class="socials" id="socials"></div>
+    </section>
+
+    <section id="github" class="reveal" hidden>
+      <div class="label"><span><i>05</i>github</span><a href="https://github.com/21parthh" target="_blank" rel="noopener">@21parthh ↗</a></div>
+      <p class="gh-total"><b id="ghTotal">—</b> contributions in the last year</p>
+      <div class="gh-months" id="ghMonths"></div>
+      <div class="gh" id="gh" role="img" aria-label="GitHub contribution graph"></div>
+      <div class="gh-foot">
+        <span id="ghHover">hover a day</span>
+        <span class="gh-legend">less <i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i> more</span>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div class="wrap"><div class="in">
+    <span>© <span id="yr"></span> Parth Deore · Pune, India · built by hand</span>
+    <a href="#top">back to top ↑</a>
+  </div></div>
+</footer>
+
+<div class="toast" id="toast" role="status"><i></i><span></span></div>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="site.js"></script>
+<script src="motion.js"></script>
+</body>
 </html>
